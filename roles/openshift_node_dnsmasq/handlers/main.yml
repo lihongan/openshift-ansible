@@ -5,6 +5,11 @@
     state: restarted
     enabled: True
 
+- name: restart dbus
+  systemd:
+    name: dbus
+    state: restarted
+
 - name: restart dnsmasq
   systemd:
     name: dnsmasq
